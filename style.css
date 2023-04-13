@@ -136,6 +136,10 @@ h3 {
     width: 90vw;
 }
 
+.logo50_mobile {
+    display: none;
+}
+
 .menu {
     display: flex;
     flex-direction: column;
@@ -356,6 +360,143 @@ input:checked+.slider:before {
     }
 
     100% {
-        background-position: 0 -400%;
+        background-position: 0 -250%;
+    }
+}
+
+/* Responsive */
+@media only screen and (max-width: 767px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .container img {
+        scale: 1.5;
+        left: 69%;
+        top: 62.5%;
+    }
+
+    .bg {
+        margin-top: -45%;
+    }
+
+    .overlay {
+        margin-top: 20.7%;
+        height: 100%;
+    }
+
+    .grid {
+        margin-top: -77%;
+        height: 50.5%;
+        background-size: 25px 15px;
+        animation: crawlingWall 30s linear infinite;
+    }
+
+    .logo50 {
+        display: none;
+    }
+
+    .logo50_mobile {
+        display: block;
+        position: absolute;
+        margin-top: 163%;
+    }
+
+    .menu {
+        margin-top: -30%;
+    }
+
+    .menu button {
+        width: 60vw;
+        height: 7vh;
+        font-size: larger;
+    }
+
+    .modal {
+        height: 50vh;
+        width: 85vw;
+        margin-bottom: 45%;
+        text-align: center;
+        font-size: 19px;
+        line-height: 150%;
+        padding: 12%;
+    }
+
+    .modal .btn:first-of-type {
+        margin-top: 24%;
+    }
+
+    .modal .btn {
+        margin-top: 5%;
+        width: 50vw;
+        font-size: 16px;
+    }
+
+    .end p {
+        font-size: 30px;
+    }
+
+    .end h1 {
+        font-size: 190px;
+        margin-top: 25%;
+    }
+
+    .end h1:last-of-type {
+        font-size: 123px;
+        margin-top: -13%;
+        scale: 1.1;
+    }
+
+    .end h2 {
+        font-size: 55px;
+        padding: 4%;
+        margin-top: 15%;
+    }
+
+    .settings {
+        height: 50vh;
+        width: 100vw;
+        text-align: center;
+        font-size: 19px;
+        line-height: 150%;
+        padding: 12%;
+        margin-top: 50%;
+    }
+
+    .modal_settings {
+        height: 50vh;
+    }
+
+    .close, .close_credits {
+        width: 15%;
+        margin-left: 0;
+        top: 8%;
+    }
+
+    .modal_settings p {
+        margin-top: 20%;
+    }
+
+    .music {
+        margin-top: 10%;
+    }
+
+    .credits {
+        height: 50vh;
+        width: 100vw;
+        text-align: center;
+        line-height: 150%;
+        padding: 12%;
+        margin-top: 50%;
+    }
+
+    .modal_credits {
+        height: 50vh;
+    }
+
+    .modal_credits p {
+        text-align: center;
+        font-size: 16px;
+        margin-top: 12%;
     }
 }
