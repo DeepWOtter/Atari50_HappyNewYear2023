@@ -106,14 +106,6 @@ function closeCredits() {
 }
 btn_close_credits.addEventListener("click", closeCredits);
 
-//Play music
-var page = document.querySelector(body);
-var audio = document.querySelector(".firstAudio");
-page.addEventListener("mousemove", playAudio);
-function playAudio() {
-  audio.play();
-}
-
 var music = new Audio(
   "sound/Mega Man 5 - Intro + Title Theme (Atari PoKEY).mp3"
 );
