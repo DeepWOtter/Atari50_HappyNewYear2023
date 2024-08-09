@@ -107,7 +107,7 @@ function closeCredits() {
 btn_close_credits.addEventListener("click", closeCredits);
 
 //Play music
-var promise = document.querySelector(audio).play();
+var promise = document.querySelector(".audioFirstPlay").play();
 if (promise !== undefined) {
   promise.then(_ => {
     // Autoplay started!
