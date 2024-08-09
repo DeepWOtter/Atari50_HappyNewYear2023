@@ -107,15 +107,11 @@ function closeCredits() {
 btn_close_credits.addEventListener("click", closeCredits);
 
 //Play music
-var promise = document.querySelector(".audioFirstPlay").play();
-if (promise !== undefined) {
-  promise.then(_ => {
-    // Autoplay started!
-    music.play();
-  }).catch(error => {
-    // Autoplay was prevented.
-    music.play();
-  });
+var page = document.querySelector(body);
+var audio = document.querySelector(".firstAudio");
+page.addEventListener("mousemove", playAudio);
+function playAudio() {
+  audio.play();
 }
 
 var music = new Audio(
