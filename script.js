@@ -1,3 +1,6 @@
+//Allow autoplay audio
+Permissions-Policy: autoplay=(self);
+
 //New game modal
 var modal = document.querySelector(".modal");
 
