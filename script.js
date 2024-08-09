@@ -114,6 +114,16 @@ var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator
   else {
       $('#playAudio').remove()
   }
+var promise = document.querySelector('video').play();
+if (promise !== undefined) {
+  promise.then(_ => {
+    // Autoplay started!
+    music.play();
+  }).catch(error => {
+    // Autoplay was prevented.
+    music.play();
+  });
+}
 
 var music = new Audio(
   "sound/Mega Man 5 - Intro + Title Theme (Atari PoKEY).mp3"
