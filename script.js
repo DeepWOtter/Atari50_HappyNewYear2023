@@ -107,14 +107,7 @@ function closeCredits() {
 btn_close_credits.addEventListener("click", closeCredits);
 
 //Play music
-var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-  if (!isChrome){
-      $('#iframeAudio').remove()
-  }
-  else {
-      $('#playAudio').remove()
-  }
-var promise = document.querySelector('video').play();
+var promise = document.querySelector('audio').play();
 if (promise !== undefined) {
   promise.then(_ => {
     // Autoplay started!
